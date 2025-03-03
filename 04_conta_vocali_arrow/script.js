@@ -1,10 +1,10 @@
 /* Scrivi una funzione che accetti una stringa e restituisca il numero di vocali contenute al suo interno */
 
-const word = 'precipitevolissimevolmente';
+const word = 'pappa';
 
 
 // Dichiara la funzione qui.
-function vocalsCounter (word) {
+const vocalsCounter = word => {
     word= word.toLowerCase();
     let counter = 0;
     for(i=0; i< word.length; i++){
