@@ -12,7 +12,8 @@ const personName = 'Mario';
 // Dichiara la funzione qui.
 const greetingWithName = name =>{
     const date = new Date();
-    let hour = date.getHours();
+    console.log(date);
+    const hour = date.getHours();
     if (hour >= 0 && hour < 13){
         console.log(`Buongiorno ${name}, il buongiorno si vede dal mattino`);
     } else if (hour >= 13 && hour < 17){

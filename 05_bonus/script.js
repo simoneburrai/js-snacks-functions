@@ -11,13 +11,18 @@ const personName = 'Mario';
 
 // Dichiara la funzione qui.
 function greetingWithName (name){
+    //creo una variabile contenente la data attuale
     const date = new Date();
+    //creo una variabile contenente l'ora attuale, grazie alla variabile con la data
     let hour = date.getHours();
+
+    //creo una condizione per il messaggio da stampare in base all'ora
+    //da mezzanotte alle 13
     if (hour >= 0 && hour < 13){
         console.log(`Buongiorno ${name}, il buongiorno si vede dal mattino`);
-    } else if (hour >= 13 && hour < 17){
+    } else if (hour >= 13 && hour < 17){ //dalle 13 alle 17
         console.log(`Buon Pomeriggio ${name}, oggi fai una siesta?`);
-    } else if (hour >= 17 && hour <= 23){
+    } else if (hour >= 17 && hour <= 23){ //dalle 17 a mezzanotte
         console.log(`Buonasera ${name}, hai già cenato?`);
     }
     
